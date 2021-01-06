@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 06 Sty 2021, 14:25
+-- Czas generowania: 06 Sty 2021, 20:09
 -- Wersja serwera: 5.7.17
 -- Wersja PHP: 5.6.30
 
@@ -292,7 +292,7 @@ CREATE TABLE `produkty` (
 --
 
 INSERT INTO `produkty` (`id_p`, `nazwa_p`, `waga_p`, `ilosc_p`, `id_h`) VALUES
-(1, 'Telewizor Samsung Amoled 20 cali', 25, 2800, 1),
+(1, 'Telewizor Samsung Amoled 20 cali', 25, 2796, 1),
 (2, 'Telefon Samsung S20', 1, 3200, 1),
 (3, 'Etui do Galaxy A6 i A6 Plus 2018', 0, 11200, 2),
 (4, 'Telefon Asus zenfone 7 pro', 1, 128, 3),
@@ -365,7 +365,8 @@ INSERT INTO `sprzedaz` (`id_s`, `id_u`, `id_p`, `id_d`, `ilosc`, `waga`) VALUES
 (15, 13, 6, 3, 2, 0),
 (16, 14, 6, 1, 100, 4),
 (17, 15, 9, 3, 4, 4),
-(18, 5, 6, 1, 20, 4);
+(18, 5, 6, 1, 20, 4),
+(19, 2, 1, 3, 4, 4);
 
 --
 -- Wyzwalacze `sprzedaz`
@@ -592,7 +593,7 @@ ALTER TABLE `przedawnione_oferty`
 -- AUTO_INCREMENT dla tabeli `sprzedaz`
 --
 ALTER TABLE `sprzedaz`
-  MODIFY `id_s` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id_s` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 --
 -- AUTO_INCREMENT dla tabeli `uzytkownik`
 --
