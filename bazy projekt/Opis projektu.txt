@@ -2,3 +2,4 @@ Projekt bazy sklepu internetowego.
 Dodawanie ofert, automatyczne usuwanie określonej ilości produktów z tabeli produkty po dokonaniu zakupu
 Pokazanie z jakich hurtowni pochodzą produkty.
 Sprawdzanie czy produkty są dostępne.
+Po usunięciu oferty dodanie jej jako przedawniona/zarchiwizowana
