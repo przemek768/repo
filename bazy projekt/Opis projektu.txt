@@ -1,0 +1,4 @@
+Projekt bazy sklepu internetowego.
+Dodawanie ofert, automatyczne usuwanie określonej ilości produktów z tabeli produkty po dokonaniu zakupu
+Dodawanie nowych użytkowników.
+Sprawdzanie czy produkty są dostępne.

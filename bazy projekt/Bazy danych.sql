@@ -1,0 +1,11 @@
+SELECT uzytkownik.login_u, przedawnione_oferty.nazwa_o, produkty.nazwa_p FROM przedawnione_oferty INNER JOIN uzytkownik INNER JOIN produkty WHERE produkty.id_p = przedawnione_oferty.id_p AND uzytkownik.id_u = przedawnione_oferty.id_u;
+SELECT * FROM produkty WHERE ilosc_p BETWEEN 1200 AND 3000;
+SELECT produkty.nazwa_p, hurtownie.nazwa_h FROM produkty INNER JOIN hurtownie WHERE hurtownie.id_h = produkty.id_h;
+SELECT AVG(sprzedaz.ilosc) AS 'Srednia ilosc sprzedanych produktow' FROM `sprzedaz`;
+SELECT SUM(sprzedaz.ilosc) FROM sprzedaz WHERE id_u = 1;
+SELECT * FROM uzytkownik WHERE uzytkownik.id_u BETWEEN 10 AND 20 AND uzytkownik.login_u NOT LIKE 'Ka%';
+SELECT produkty.nazwa_p FROM produkty, hurtownie WHERE hurtownie.id_h IN (SELECT produkty.id_h FROM produkty WHERE produkty.id_h BETWEEN 8 AND 10);
+SELECT COUNT(produkty.ilosc_p) FROM produkty WHERE produkty.nazwa_p LIKE 'Ma%';
+SELECT produkty.id_p, produkty.nazwa_p, IF(produkty.ilosc_p > 1700, "Tak", "Nie") FROM produkty;
+SELECT uzytkownik.login_u, oferta.nazwa_o FROM oferta, uzytkownik WHERE oferta.id_u = uzytkownik.id_u AND uzytkownik.id_u BETWEEN 3 AND 12;
+SELECT uzytkownik.login_u, produkty.nazwa_p FROM uzytkownik INNER JOIN produkty INNER JOIN sprzedaz WHERE uzytkownik.id_u = sprzedaz.id_u AND produkty.id_p = sprzedaz.id_p ORDER BY sprzedaz.ilosc ASC;
